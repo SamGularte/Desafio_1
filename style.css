@@ -267,13 +267,16 @@ li{
   flex-direction:column;
   align-items: center;
   justify-content: space-between;
+  min-height: 80%;
 }
 
-.about_img_years_n p{
+.about_img_years .about_img_years_n{
+  font-size: 1.7rem;
   color: #8B8B8B;
 }
 
-.about_img_years_selected p{
+.about_img_years .about_img_years_selected{
+  font-size: 1.7rem;
   color: white;
 }
 
