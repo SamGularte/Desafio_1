@@ -29,10 +29,11 @@ header{
   right: 0;
   padding: 4% 4% 0.2% 4%;
   background-color: white;
+  z-index: 10000;
 }
 
 header .navbar{
-  z-index: 1000;
+  z-index: 10000;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -49,16 +50,10 @@ header .logo{
 }
 
 header .logo_img{
-  width: 2.5rem;
-  background-color: #5468E7;
-  padding: .4rem;
-  border-radius: 25%;
-  margin-right: .5rem;
-}
-
-header .logo_dot{
-  font-size: 3.2rem;
-  color:#5468E7;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  width: 55%;
 }
 
 header .links{
@@ -472,33 +467,26 @@ li{
   margin-top: 2%;
 }
 
-.services_top_arrows{
+.services_top_button{
   flex: 1 1 20rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.services_top_button a{
+  padding: 1.5rem 3rem;
+  background-color: #5468E7;
+  color: white;
+  cursor: pointer;
+  font-size: 1.7rem;
+  border-radius: .5rem;
+  overflow: hidden;
+  margin-top: 4rem;
+}
+
 .services_content{
   display: none;
-}
-
-.services_top_arrow_left{
-  padding: 6% 4% 4% 4%;
-  border-radius: 50%;
-}
-
-.services_top_arrow_right{
-  padding: 6% 4% 4% 4%;
-  border-radius: 50%;
-}
-
-.services_top_arrow_left:hover{
-  background-color: #5468E7;
-}
-
-.services_top_arrow_right:hover{
-  background-color: #5468E7;
 }
 
 .services_content_desktop_p{
@@ -814,6 +802,7 @@ footer .links{
 
 footer .links a{
   margin-left: 4rem;
+  color: #8B8B8B;
 }
 
 footer .links a:visited{
@@ -954,7 +943,7 @@ footer .underline_mob{
     display: none;
   }
 
-  .services_top_arrows{
+  .services_top_button{
     display: none;
   }
 
